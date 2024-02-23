@@ -1,11 +1,11 @@
 {
-  "name": "teepee",
+  "name": "tea-echo",
   "version": "3.0.1",
   "description": "Generic HTTP client",
-  "main": "lib/Teepee.js",
+  "main": "teaEcho/teaEcho.js",
   "author": "Andreas Lind @papandreou <andreas@one.com>",
   "license": "BSD-3-Clause",
-  "repository": "git://github.com/One-com/teepee",
+  "repository": "https://github.com/WeiDengpan/teaEcho",
   "scripts": {
     "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha",
