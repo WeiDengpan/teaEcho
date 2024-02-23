@@ -1,0 +1,52 @@
+{
+  "name": "teepee",
+  "version": "3.0.1",
+  "description": "Generic HTTP client",
+  "main": "lib/Teepee.js",
+  "author": "Andreas Lind @papandreou <andreas@one.com>",
+  "license": "BSD-3-Clause",
+  "repository": "git://github.com/One-com/teepee",
+  "scripts": {
+    "lint": "eslint . && prettier --check '**/*.js'",
+    "test": "mocha",
+    "ci": "npm test && npm run coverage && npm run lint",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
+  },
+  "dependencies": {
+    "createerror": "1.2.0",
+    "dnserrors": "2.1.2",
+    "form-data": "2.1.4",
+    "httperrors": "2.2.0",
+    "is-stream": "1.1.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.clone": "^4.5.0",
+    "lodash.defaults": "^4.2.0",
+    "lodash.omit": "^4.5.0",
+    "lodash.uniq": "^4.5.0",
+    "passerror": "1.1.1",
+    "socketerrors": "^0.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.1.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "httpception": "^3.0.0",
+    "mocha": "^3.0.2",
+    "nyc": "^14.1.1",
+    "prettier": "~1.19.1",
+    "sinon": "^7.4.2",
+    "unexpected": "^11.8.0",
+    "unexpected-sinon": "^10.11.2"
+  },
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
+  }
+}
