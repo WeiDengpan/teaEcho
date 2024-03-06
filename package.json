@@ -1,11 +1,11 @@
 {
   "name": "tea-echo",
-  "version": "3.0.1",
+  "version": "3.0.4",
   "description": "Generic HTTP client",
   "main": "teaEcho/teaEcho.js",
   "author": "Andreas Lind @papandreou <andreas@one.com>",
   "license": "BSD-3-Clause",
-  "repository": "https://github.com/WeiDengpan/teaEcho",
+  "repository": "https://github.com/echo-wee/teaEcho",
   "scripts": {
     "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha",
